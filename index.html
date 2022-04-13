@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +19,8 @@
     <section class="header">
         <nav>
             <a class="myname" href="#">Arwin Arun Swapna</a>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">ABOUT</a></li>
@@ -29,6 +31,7 @@
                     <li><a href="">CONTACT</a></li>
                 </ul>
             </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
         
         <div class="text-box">
@@ -44,8 +47,35 @@
         </div>
     </section>
 
+    <!-- ABOUT-->
+    <section class="about">
+        <div class="aboutText">
+            <h1>About</h1>
+            <h4>As a Programmer</h4>
+            <p>
+                Currently, delving into the world of Full-Stack Development.
+            </p>
+            <h4>As a Human</h4>
+            <p>
+                Working on becoming more emotinally intelligent to inspire, motivate and empathize the people around me.
+            </p>
+        </div>
+    </section>
 
 
+
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu()
+    {
+        navLinks.style.right = "0";
+    }
+    function hideMenu()
+    {
+        navLinks.style.right = "-40%";
+    }
+</script>
 
 
     
