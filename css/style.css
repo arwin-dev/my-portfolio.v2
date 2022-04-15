@@ -62,7 +62,7 @@ header{
 
 .nav-bar{
     position: relative;
-    height: calc(2rem + 1rem);
+    height: calc(2.5rem + 1rem);
     max-width: 1250px;
     display: flex;
     justify-content: space-between;
@@ -156,7 +156,7 @@ header{
 }
 
 .about-container h2{
-    color: var(--third-color);
+    color: var(--text-color);
     font-size: 4em;
     font-weight: 600;
     line-height: 100px;
@@ -172,15 +172,25 @@ header{
     color: var(--second-color);
     font-size: var(--normal-font-size);
     max-width: 550px;
+    margin-bottom: 1em;
+    text-align: left;
 }
 
 .about-container .profile-pic{
-    width: 350px;
-    height: auto;
+    max-width: 350px;
+    max-height: 350px;
+    background-color: var(--hover-color);
 }
 
 .profile-pic img{
-    width: 100%;
-    height: auto;
+    width: 350px;
+    height: 350px;
+    opacity: .6;
+    transition: 0.5s ease;
+    object-fit: fill;
+    
 }
-
+.profile-pic img:hover{
+    opacity: 1;
+    box-shadow: var(--text-highlight-color) 10px 10px ;
+}
