@@ -21,7 +21,7 @@
     --normal-font-size: 1em;
 
     /* Box shadow */
-    --box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
+    --box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.591);
 
     /* Scroll bar colors */
     --scroll-bar-color: #c5cadf;
@@ -51,9 +51,12 @@ a{
     text-decoration: none;
 }
 
+li{
+    list-style-type: none;
+}
 ::-webkit-scrollbar{
-    width: 10px;
-    background: var(--scroll-bar-color);
+    width: 6px;
+    background: var(--first-color);
 }
 
 ::-webkit-scrollbar-thumb{
@@ -83,8 +86,8 @@ header{
 }
 
 header.sticky{
-    background: rgb(11, 28, 56);
     box-shadow: var(--box-shadow);
+    background: transparent;
 }
 .nav-bar{
     position: relative;
@@ -162,8 +165,8 @@ header.sticky .nav-bar{
 
 .btn{
     float: right;
-    background-color: var(--second-color);
-    color: var(--third-color);
+    background-color: black;
+    color: var(--text-highlight-color);
     font-size: var(--normal-font-size);
     font-weight: 500;
     padding: 10px 15px;
@@ -215,20 +218,108 @@ header.sticky .nav-bar{
 .about-container .profile-pic{
     max-width: 350px;
     max-height: 350px;
-    background-color: var(--first-color);
+
 }
 
 .profile-pic img{
     width: 350px;
     height: 350px;
-    opacity: .3;
+    opacity: .4;
     transition: 0.3s ease;
     object-fit: fill;
     border-radius: 5px;
-    box-shadow: var(--text-highlight-color) 5px 5px ;
+    box-shadow: var(--second-color) 10px 10px ;
     
 }
 .profile-pic img:hover{
-    opacity: 1;
-    box-shadow: var(--text-highlight-color) 10px 10px ;
+    opacity: 0.8;
+    box-shadow: var(--second-color) 5px 5px ;
+}
+
+/* About Section  */
+
+.experience{
+    position: relative;;
+    max-width: 1250px;
+    min-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4.3rem 2rem;
+    display: flex;
+    justify-content: left;
+    align-items:left;
+}
+
+.experience-container h2{
+    color: var(--third-color);
+    font-size: 4em;
+    font-weight: 600;
+    line-height: 100px;
+}
+
+.skillsinfo h4 label{
+    color: var(--text-highlight-color);
+    font-size: 2em;
+    font-weight: 400;
+    padding: 15px 0;
+}
+
+/* Experience  */
+
+
+.experience{
+    width: 1250px;
+}
+
+.experience-container{
+    width: 100%;
+}
+
+.content{
+    width: 100%;
+}
+.experience-container h2{
+    margin-bottom: 30px;
+}
+
+.work-list{
+    display: grid;
+    grid-template-rows: repeat(autofill,minmax(225px,1fr));
+    max-width: 100%;
+}
+
+.work-list-container{
+    width: 100%;
+}
+
+.work-card{
+    max-width: 100%;
+    background: black; 
+    border-bottom: 3px solid var(--second-color);
+    padding: 25px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.work-card h3{
+    font-weight: 600;
+}
+
+.work-card p{
+    color: var(--text-color);
+}
+
+.work-card .learnMoreBtn{
+    margin-top: 10px;
+    color: var(--text-highlight-color);
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.work-card .learnMoreBtn i{
+    transition: .3s ease;
+}
+
+.work-card:hover .learnMoreBtn i{
+    transform: translateX(10px);
 }
