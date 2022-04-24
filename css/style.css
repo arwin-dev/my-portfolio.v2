@@ -236,7 +236,6 @@ header.sticky .nav-bar{
     object-fit: fill;
     border-radius: 5px;
     box-shadow: var(--card-bg-color) 15px 15px ;
-    
 }
 .profile-pic img:hover{
     opacity: 0.8;
@@ -292,6 +291,12 @@ header.sticky .nav-bar{
     border-radius: 6px;
     margin-bottom: 15px;
     box-shadow: var(--box-shadow);
+    transition: 0.3s ease;
+}
+
+.work-card:hover{
+    transform: scale(1.05);
+
 }
 
 .work-card h3{
@@ -579,3 +584,73 @@ header.sticky .nav-bar{
 .contact-btn:hover{
     background-color: var(--hover-color);
 }
+
+/* Footer */
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--card-bg-color);
+    width: 100%;
+    margin-top: 50px;
+    padding: 3rem 15rem;
+    color: var(--text-highlight-color);
+}
+
+footer a{
+    color: var(--text-color);
+}
+
+footer a:hover{
+    color: var(--hover-color);
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+footer h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.aboutme p{
+    margin-bottom: 20px;
+}
+
+.footer-info h2{
+    text-align: center;
+}
+
+.footer-info ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-info li{
+    margin: 5px;
+}
+.follow ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.follow li{
+    margin-right: 10px;
+}
+
+.footer-copyright{
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer i{
+    font-size: 20px;
+    margin: 6px;
+}   
