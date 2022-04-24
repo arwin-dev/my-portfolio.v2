@@ -29,3 +29,12 @@ closeCardBtn.forEach((closeCardBtn) => {
         });
     });
 });
+
+//Forms
+
+const myForm = document.getElementById("myForm");
+
+myForm.addEventListener("submit",(e) => {
+    e.preventDefault();
+    
+});
