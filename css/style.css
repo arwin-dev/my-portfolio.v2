@@ -446,14 +446,18 @@ header.sticky .nav-bar{
 }
 
 .project-list-container-card i{
-    font-size: 20px;
+    font-size: 25px;
     align-items: center;
     color: var(--text-highlight-color);
-    transition: 0.3s ease;
+    transition: 0.5s ease;
 }
 
-.project-list-container-card i:hover{
-    font-size: 40px;
+.project-list-container-card .project-links i{
+    padding: 4px;
+}
+
+.project-list-container-card .project-links i:hover{
+    font-size: 32px;
 }
 
 .project-list-container{
@@ -463,8 +467,6 @@ header.sticky .nav-bar{
 .project-list-container:hover{
     transform: translateY(-10px);
 }
-
-
 
 .project-list-container-card .card-data h3{
     color: var(--third-color);
@@ -597,7 +599,7 @@ footer{
     align-items: center;
     flex-direction: column;
     background-color: var(--card-bg-color);
-    width: 100%;
+    min-width: 100%;
     padding: 3rem 15rem;
     color: var(--text-highlight-color);
 }
