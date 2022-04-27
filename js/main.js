@@ -38,3 +38,24 @@ myForm.addEventListener("submit",(e) => {
     e.preventDefault();
     
 });
+
+//Responsive navigation menu toggle
+
+const menuBtn = document.querySelector(".nav-menu-btn");
+const closebtn = document.querySelector(".nav-close-btn");
+const navigation = document.querySelector(".navigation");
+const navItems = document.querySelectorAll(".nav-items a");
+
+menuBtn.addEventListener("click", () =>{
+    navigation.classList.add("active");
+});
+
+closebtn.addEventListener("click", () =>{
+    navigation.classList.remove("active");
+});
+
+navItems.forEach((navItem) =>{
+    navItem.addEventListener("click", () => {
+        navigation.classList.remove("active");
+    });
+});
