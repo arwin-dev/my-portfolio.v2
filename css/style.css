@@ -136,11 +136,14 @@ header.sticky .nav-bar{
 
 .home{
     position: relative;;
-    max-width: 1250px;
+    max-width: 100%;
     min-height: 100vh;
     margin-left: auto;
     margin-right: auto;
     padding: 4rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .home-container h2{
@@ -148,6 +151,7 @@ header.sticky .nav-bar{
     font-size: 6em;
     font-weight: 600;
     line-height: 130px;
+    
 }
 
 .home-container h3{
@@ -190,8 +194,8 @@ header.sticky .nav-bar{
 
 .about{
     position: relative;;
-    max-width: 1250px;
-    min-height: 90vh;
+    max-width: 100%;
+    min-height: 100vh;
     margin-left: auto;
     margin-right: auto;
     padding: 3rem 2rem;
@@ -246,7 +250,7 @@ header.sticky .nav-bar{
 
 .experience{
     position: relative;
-    width: 1250px;
+    width: 100%;
     max-width: 1250px;
     min-height: 100vh;
     margin-left: auto;
@@ -319,8 +323,8 @@ header.sticky .nav-bar{
     transition: .3s ease;
 }
 
-.work-card:hover .learnMoreBtn i{
-    transform: translateX(10px);
+.work-card .learnMoreBtn:hover i{
+    font-size: 20px;
 }
 
 .work-card-content{
@@ -372,6 +376,7 @@ header.sticky .nav-bar{
 .work-card-content-data ul li{
     font-size: var(--small-font-size);
     line-height: 2;
+    list-style-type: disc;
 }
 
 .work-card-content-data ul li i{
@@ -390,7 +395,7 @@ header.sticky .nav-bar{
 /*  Projects  */
 
 .project {
-    width: 1250px;
+    max-width: 100%;
     position: relative;;
     max-width: 1250px;
     min-height: 100vh;
@@ -399,7 +404,6 @@ header.sticky .nav-bar{
     padding: 4.3rem 2rem;
     display: flex;
     justify-content: left;
-    align-items:left;
 }
 
 .project-container{
@@ -484,10 +488,10 @@ header.sticky .nav-bar{
 /*  Contact  */
 
 .contact {
-    width: 1250px;
+    width: 100%;
     position: relative;;
     max-width: 1250px;
-    min-height: 100vh;
+    min-height: 90vh;
     margin-left: auto;
     margin-right: auto;
     padding: 4.3rem 2rem;
@@ -594,7 +598,6 @@ footer{
     flex-direction: column;
     background-color: var(--card-bg-color);
     width: 100%;
-    margin-top: 50px;
     padding: 3rem 15rem;
     color: var(--text-highlight-color);
 }
