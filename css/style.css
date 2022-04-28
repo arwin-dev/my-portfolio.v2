@@ -619,14 +619,15 @@ header.sticky .nav-bar{
 /* Footer */
 
 footer{
-    width: 100%;
+    max-width: 100%;
+    position: relative;;
+    background-color: var(--card-bg-color);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4.3rem 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    background-color: var(--card-bg-color);
-    padding: 3rem 15rem;
-    color: var(--text-highlight-color);
 }
 
 footer a{
@@ -637,15 +638,18 @@ footer a:hover{
     color: var(--hover-color);
 }
 
-.footer-container{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
 footer h2{
     font-size: 1.5rem;
     font-weight: 600;
+}
+
+.footer-cont{
+    width: 100%;
+}
+
+.footer-inform{
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .aboutme p{
@@ -657,9 +661,8 @@ footer h2{
 }
 
 .footer-info ul{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    row-gap: 2px;
 }
 
 .footer-info li{
@@ -676,6 +679,7 @@ footer h2{
 }
 
 .footer-copyright{
+    color: var(--text-color);
     text-align: center;
     margin-top: 30px;
 }
@@ -784,6 +788,22 @@ footer i{
     align-items: center;
     row-gap: 20px;
     width: 100%;
+}
+
+.footer-inform{
+    display: grid;
+    row-gap: 5px;
+    justify-content: left;
+}
+
+.footer-info h2{
+    text-align: left;
+}
+
+.follow ul{
+    display: flex;
+    justify-content: left;
+    align-items: left;
 }
 
 
