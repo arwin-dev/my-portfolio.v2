@@ -227,9 +227,8 @@ header.sticky .nav-bar{
 
 .about-container h2{
     color: var(--third-color);
-    font-size: 4em;
+    font-size: clamp(2.5rem, 8vw, 4rem);
     font-weight: 600;
-    line-height: 100px;
 }
 
 .about-info{
@@ -241,7 +240,7 @@ header.sticky .nav-bar{
 .about-container .info p{
     
     color: var(--text-color);
-    font-size: var(--normal-font-size);
+    font-size: clamp(0.8rem, 2.5vw, 1rem);
     max-width: 550px;
     margin-bottom: 1em;
     text-align: justify;
@@ -755,6 +754,11 @@ footer i{
     cursor: pointer;
 }
 
+/* Home */
+
+.home{
+
+}
 
 /* About Me */
 .about .about-container .about-info{
