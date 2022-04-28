@@ -91,6 +91,14 @@ header{
     transition: 0.6s ease;
 }
 
+.section{
+    position: relative;
+    max-width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 6rem 2rem 2rem;
+}
+
 header.sticky{
     box-shadow: var(--box-shadow);
     background: transparent;
@@ -206,9 +214,9 @@ header.sticky .nav-bar{
     min-height: 100vh;
     margin-left: auto;
     margin-right: auto;
-    padding: 3rem 2rem;
+    padding: 4rem 2rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 
@@ -227,11 +235,12 @@ header.sticky .nav-bar{
 }
 
 .about-container .info p{
+    
     color: var(--text-color);
     font-size: var(--normal-font-size);
     max-width: 550px;
     margin-bottom: 1em;
-    text-align: left;
+    text-align: justify;
 }
 
 .about-container .profile-pic{
@@ -244,6 +253,7 @@ header.sticky .nav-bar{
     width: 350px;
     height: 350px;
     opacity: .4;
+    padding-left: 30px;
     transition: 0.3s ease;
     object-fit: fill;
     border-radius: 5px;
@@ -329,10 +339,11 @@ header.sticky .nav-bar{
 
 .work-card .learnMoreBtn i{
     transition: .3s ease;
+    color: var(--text-color);
 }
 
 .work-card .learnMoreBtn:hover i{
-    font-size: 20px;
+    color: var(--text-highlight-color);
 }
 
 .work-card-content{
@@ -454,7 +465,7 @@ header.sticky .nav-bar{
 }
 
 .project-list-container-card i{
-    font-size: 25px;
+    font-size: 20px;
     align-items: center;
     color: var(--text-highlight-color);
     transition: 0.5s ease;
@@ -462,10 +473,11 @@ header.sticky .nav-bar{
 
 .project-list-container-card .project-links i{
     padding: 4px;
+    color: var(--text-color);
 }
 
 .project-list-container-card .project-links i:hover{
-    font-size: 32px;
+    color: var(--text-highlight-color);
 }
 
 .project-list-container{
@@ -738,5 +750,40 @@ footer i{
     cursor: pointer;
 }
 
+/*  Home  */
+
+.home-container h2{
+    font-size: 5em;
+}
+
+.home-container p{
+    font-size: 1em;
+}
+
+.home-container.info p{
+    font-size: 0.7em;
+}
+
+/* About Me */
+.about .about-container .about-info{
+    display: grid;
+    width: 100%;
+    row-gap: 20px;
+    text-align: justify;
+}
+.about-container .profile-pic{
+    margin: 0 auto;
+}
+
+.profile-pic img{
+    padding-left:0;
+}
 }
     
+@media screen and (max-width: 640px){
+    .contact .contact-container .content-contact{
+        display: grid;
+        width: 100%;
+        row-gap: 20px;
+    }
+}
