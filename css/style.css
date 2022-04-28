@@ -640,6 +640,7 @@ footer a:hover{
 
 footer h2{
     font-size: 1.5rem;
+    color: var(--text-highlight-color);
     font-weight: 600;
 }
 
@@ -653,11 +654,13 @@ footer h2{
 }
 
 .aboutme p{
+    color: var(--text-color);
     margin-bottom: 20px;
 }
 
 .footer-info h2{
     text-align: center;
+    color: var(--text-highlight-color);
 }
 
 .footer-info ul{
@@ -679,7 +682,7 @@ footer h2{
 }
 
 .footer-copyright{
-    color: var(--text-color);
+    color: white;
     text-align: center;
     margin-top: 30px;
 }
