@@ -245,17 +245,17 @@
                 <div class="contact-form">
                     <form id="myForm">
                         <div class="first-row">
-                            <input type="text" id="form_name" name="name" placeholder="Name">
+                            <input type="text" id="form_name" name="name" placeholder="Name" required="required">
                         </div>
                         <div class="second-row">
-                            <input type="text" id="form_email" name="email" placeholder="Email">
-                            <input type="text" id="form_subject"  name="sub" placeholder="Subject">
+                            <input type="text" id="form_email" name="email" placeholder="Email" required="required">
+                            <input type="text" id="form_subject"  name="sub" placeholder="Subject" required="required">
                         </div>
                         <div class="third-row">
-                            <textarea name="Message"  name="mesg" id="form_message" placeholder="Message" ></textarea>
+                            <textarea name="Message" name="mesg" id="form_message" placeholder="Message" required="required" ></textarea>
                         </div>
                         <div class="fourth-row">
-                            <button onclick="sendmail()" class="contact-btn" type="submit">Send Message  <i class="fa-brands fa-telegram"></i></button>
+                            <button onclick="sendmail()" class="contact-btn" id="contact_sub_btn" type="submit">Send Message  <i class="fa-brands fa-telegram"></i></button>
                         </div>
 
                     </form>

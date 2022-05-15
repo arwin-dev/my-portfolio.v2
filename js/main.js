@@ -62,10 +62,6 @@ navItems.forEach((navItem) =>{
 
 //Contact Form 
 
-(function() {
-    emailjs.init('HgYSTPQZXeYxPuJc_');
-    console.log(emailjs);
-})();
 
 function sendmail(){
 
@@ -74,6 +70,10 @@ function sendmail(){
     let form_sub = document.getElementById("form_subject").value;
     let form_mesg = document.getElementById("form_message").value;
 
+    if(form_name == "" || form_email == "" || form_mesg == "" || form_sub == ""){
+        return
+    }
+    
         var contactParams = {
             from_name: form_name,
             from_email: form_email,
@@ -81,5 +81,7 @@ function sendmail(){
             message: form_mesg
         };
         
+    document.querySelector('#contact_sub_btn').disabled = true;
     emailjs.send('service_c9xsmai','contact_form',contactParams).then(function(res){});
+    alert("Email has been sent.")
 }
