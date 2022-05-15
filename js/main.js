@@ -59,3 +59,27 @@ navItems.forEach((navItem) =>{
         navigation.classList.remove("active");
     });
 });
+
+//Contact Form 
+
+(function() {
+    emailjs.init('HgYSTPQZXeYxPuJc_');
+    console.log(emailjs);
+})();
+
+function sendmail(){
+
+    let form_name = document.getElementById("form_name").value;
+    let form_email = document.getElementById("form_email").value;
+    let form_sub = document.getElementById("form_subject").value;
+    let form_mesg = document.getElementById("form_message").value;
+
+        var contactParams = {
+            from_name: form_name,
+            from_email: form_email,
+            subject: form_sub,
+            message: form_mesg
+        };
+        
+    emailjs.send('service_c9xsmai','contact_form',contactParams).then(function(res){});
+}

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <script src="https://kit.fontawesome.com/a85d594145.js" crossorigin="anonymous"></script>
 
+
     <title>Arwin-dev</title>
     <link rel="icon" href="https://img.icons8.com/fluency/48/000000/duck.png" type="image/icon ">
 </head>
@@ -242,19 +243,19 @@
                     </ul>
                 </div>
                 <div class="contact-form">
-                    <form id="myForm" action="https://formsubmit.co/1ff93ada8a7ece91f6337ad809468ea8" method="POST">
+                    <form id="myForm">
                         <div class="first-row">
-                            <input type="text" name="name" placeholder="Name">
+                            <input type="text" id="form_name" name="name" placeholder="Name">
                         </div>
                         <div class="second-row">
-                            <input type="text" name="email" placeholder="Email">
-                            <input type="text" name="sub" placeholder="Subject">
+                            <input type="text" id="form_email" name="email" placeholder="Email">
+                            <input type="text" id="form_subject"  name="sub" placeholder="Subject">
                         </div>
                         <div class="third-row">
-                            <textarea name="Message" name="mesg" id="" placeholder="Message" ></textarea>
+                            <textarea name="Message"  name="mesg" id="form_message" placeholder="Message" ></textarea>
                         </div>
                         <div class="fourth-row">
-                            <button class="contact-btn" type="submit">Send Message  <i class="fa-brands fa-telegram"></i></button>
+                            <button onclick="sendmail()" class="contact-btn" type="submit">Send Message  <i class="fa-brands fa-telegram"></i></button>
                         </div>
 
                     </form>
@@ -296,5 +297,13 @@
         </div> 
     </footer>
     <script src="js/main.js"></script>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init('HgYSTPQZXeYxPuJc_');
+        })();
+    </script>
+
 </body>
 </html>
